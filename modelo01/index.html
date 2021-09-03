@@ -6,20 +6,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400;700&family=Montserrat:wght@100;300;400&display=swap"
       rel="stylesheet"
     />
+
     <title>Modelo 1</title>
     <style>
       * {
         margin: 0;
         padding: 0;
-        font-family: "Josefin Slab", serif;
       }
       .home {
         width: 100vw;
         height: 100vh;
         background-color: coral;
+        background-image: url("./images/back02.jpeg");
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
       }
       .main {
         width: 930px;
@@ -31,16 +38,31 @@
         margin-top: 30px;
       }
 
+      .home h1 {
+        font-size: 60px;
+        margin-bottom: 15px;
+      }
+      .home p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+
       .card {
         width: 300px;
         height: 300px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
+            border-radius: 10px;
         margin-top: 15px;
       }
 
       .card:hover {
         background-color: darksalmon;
+      }
+
+      .card img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
       }
 
       .footer {
@@ -51,6 +73,7 @@
         background-color: lightsalmon;
         display: flex;
         justify-content: space-around;
+        font-family: "Josefin Slab", serif;
       }
 
       .footer-menu {
@@ -67,17 +90,39 @@
     </style>
   </head>
   <body>
-    <div class="home"></div>
+    <div class="home">
+      <h1>Principal Title</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
     <div class="main">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+      <div class="card">
+        <img src="./images/back01.jpeg" alt="Imagem 1" />
+      </div>
+      <div class="card">
+        <img src="./images/back04.jpeg" alt="Imagem 4" />
+      </div>
+      <div class="card">
+        <img src="./images/back03.jpeg" alt="Imagem 3" />
+      </div>
+      <div class="card">
+        <img src="./images/back04.jpeg" alt="Imagem 4" />
+      </div>
+      <div class="card">
+        <img src="./images/back02.jpeg" alt="Imagem 2" />
+      </div>
+      <div class="card">
+        <img src="./images/back03.jpeg" alt="Imagem 3" />
+      </div>
+      <div class="card">
+        <img src="./images/back04.jpeg" alt="Imagem 4" />
+      </div>
+      <div class="card">
+        <img src="./images/back03.jpeg" alt="Imagem 3" />
+      </div>
+      <div class="card">
+        <img src="./images/back01.jpeg" alt="Imagem 1" />
+      </div>
     </div>
     <div class="footer">
       <ul class="footer-menu">
